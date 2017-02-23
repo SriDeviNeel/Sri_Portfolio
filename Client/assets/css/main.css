@@ -1,0 +1,383 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+html
+{
+      background-color: #f2f2f2;
+}
+.jumbotron
+{
+
+  max-width:100%;
+  min-height:1000px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-image: url('/Client/assets/images/c.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Arial Black, Gadget, sans-serif";
+  letter-spacing: 2px;
+  text-align: center;
+  
+  }
+
+h1
+{
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1em;  
+    word-spacing: 10px;
+}
+#underline 
+{
+    border: 3px solid;
+    max-width:5%;
+    text-align: center;
+    color:snow;
+    margin:0 auto;
+}
+
+body
+{
+    max-width: 95%;
+    margin:0 auto;
+    background-color: white;
+  
+}
+
+
+.border
+{
+    border-bottom: .25em solid #005A31;
+    margin-top:.5em; 
+}
+
+
+nav
+{
+    display:inline-block;
+    max-width:50%;
+    float:right;
+     vertical-align: top;
+    position:fixed;
+    padding: 1em;
+}
+.icon
+{
+   text-align: center;
+    padding:1em;
+    background-color: white;
+    max-width:100%;
+}
+   
+.icon a 
+{
+    text-decoration: none;
+    max-width: 100%;
+    padding:.5  em;
+    color:black;
+     font-size: 3em;
+    font-weight: 700;
+     
+}
+      
+
+
+.topnav
+{
+    display: none;
+    
+}
+nav ul li
+{
+    
+    list-style: none;
+    background-color:snow;
+    display :block;
+    text-align: center;
+    margin:1em 0;
+    padding: 1em;
+   
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    padding:1em;
+    font-family:"Roboto",Arial,Helvetica,sans-serif;
+}
+nav ul li:hover
+{
+    background-color:  #30C9FC;
+    color:snow;
+    font-weight:bold;
+}
+ 
+#portfolio
+{
+    margin-top: 2em;
+    max-width: 100%;
+    display: inline;
+}
+.col_3
+{
+    display:inline-block;
+    max-width: 33%;
+    height:400px;
+    padding:0;
+    margin:0;
+    position: relative;
+    
+    
+}
+
+
+
+.recentWork
+{
+    width: 100%;
+    height:400px;
+    z-index: -2;
+    opacity:1;
+}
+
+h2
+{
+
+    max-width:100%;
+    padding: 2em;
+    text-align: center;
+    font-family: "Arial Black, Gadget, sans-serif";
+    font-weight:bold;
+    letter-spacing: 2px;  
+    font-size: 1.5em;
+}
+
+
+h4{
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    visibility: hidden;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-out .3s;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    background-color: rgba(192,192,192,0.3);
+}
+
+.col_3:hover h4{
+  visibility: visible;
+  opacity:.9;
+    color:white;
+    font-weight: 500;
+    word-spacing: 8px;
+    font-size: 2em;
+    vertical-align: top;
+    background-color: black;
+    
+}
+
+#info1, #info3, #review
+{
+    /*margin-top:2em;*/
+    max-width: 100%;
+    height:700px;
+    background-color:#eff2f7;
+   
+}
+#info2
+{
+    margin-top:2em;
+    max-width: 100%;
+    height:700px;   
+}
+
+
+#quote
+{
+    margin-top:1em;
+    padding:2em;
+    max-width: 100%;
+    text-align: center;
+    background-color:black;
+    color:#FFF056;
+    line-height: 2em;
+    font-family: "Montserrat-Bold", "Georgia", "Times New Roman", serif;
+    font-weight: normal;
+    word-spacing: 7px;
+    position:relative;   
+    
+}
+#quote:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 26px 26px 0;
+  border-style: solid;
+  border-color: #FFF056 #fff;
+}
+.sec
+{
+    max-width:49%;
+    height:85%;
+    display:inline-block;
+    vertical-align: top;
+}
+.sec img
+{
+    max-width:100%;
+    height:90%;
+    padding:2em;
+}
+
+p 
+{ 
+    padding:.5em;
+     font-family: "Roboto",Arial,Helvetica,sans-serif;
+    font-size:15px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+footer
+{
+    color:white;
+    background-color: ;
+}
+
+/***Partial view CSS*****/
+.partial
+{
+    min-height:300px;
+    max-width:100%;
+}
+
+#contactPage
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    max-width:100%;
+    margin:2em 0;
+    
+}
+
+.locationImg
+{
+    width:50%;
+    height:300px;
+}
+.location_sec
+{
+    color:white;
+    width:50%;
+    float:right;
+    text-align: center;
+}
+.location_sec h3
+{
+    padding:1em;
+}
+#aboutPage
+{
+    max-width: 100%;
+    margin:1em;
+}
+#aboutPage section
+{
+    margin:2em;
+}
+#aboutPage p
+{
+    font-family: "Roboto",Arial,Helvetica,sans-serif;
+    font-size:15px;
+    line-height: 20px;
+    word-spacing: 3px;
+}
+
+.aboutPageImg1,.aboutPageImg3
+{
+    float:right;
+    padding:1em;
+}
+.aboutPageImg2
+{
+    float:left;
+     padding:1em;
+}
+#devTools
+{ 
+    background: linear-gradient(to bottom, #ffe6e6 0%, #ffffff 75%);
+    text-align: center;
+    padding: 1em;
+    height:500px;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+#devTools h3
+{
+    margin: 2em;
+    font-family: "Roboto",Arial,Helvetica,sans-serif;
+    
+}
+.techImg
+{
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    padding:1em;
+}
+.techImg img
+{
+    width:16%;
+    height:25%;
+    border-radius: 50%;
+    border-bottom-color: black;
+    background-color: black;
+    padding: .5em;
+}
+.techImg img:hover
+{
+    background-color:lightgray;
+    border-radius: 0;
+    border:2px inset black;
+    
+}
+.sample{
+    max-width: 100%;
+    height:300px;
+    
+    background: linear-gradient(to right, #000000 0%,#050000 46%,#ff0505 48%,#ff0202 100%);
+    display: flex;
+    justify-content: center;
+}
+.sample h1
+{
+    text-align: center;
+    font-size: 3em;
+    padding:.20em;
+     
+}
+.topName
+{
+      color: red;
+}
+
+.bottomName 
+{
+    margin-top:2.5em;
+    color:black;
+}

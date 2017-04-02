@@ -3,7 +3,11 @@ $('document'). ready(function(){
     $('.icon').click(function(){
         $('.topnav').toggle();
     });
+    $('li').click(function(){
+        $('.topnav').fadeToggle();
+    })
 });
+
 
 var myApp = angular.module('myApp',['ngRoute']);
 
@@ -24,6 +28,15 @@ var myApp = angular.module('myApp',['ngRoute']);
                   controller  : 'ContactController',
                   controllerAs: 'CC'
     })
+                  .when('/home',{
+                  templateUrl: 'partials/home.html',
+                  controller  : 'HomeController',
+                  controllerAs: 'HC'
+    })
+                   .otherwise({
+                    redirectTo: '/home'
+    })
+    
     
 });
 
@@ -44,11 +57,11 @@ var myApp = angular.module('myApp',['ngRoute']);
     });
 
 
-   /* myApp.controller('BenefitsController', function($scope){
-        debugger;
-        $scope.benefitsPage ='WHAT ARE OUR BENEFITS?';
+    myApp.controller('HomeController', function($scope){
+        
+        $scope.HomePage ='Welcome to my portfolio';
 
     });
-    myApp.controller('JoinController', function($scope){
+   /* myApp.controller('JoinController', function($scope){
         $scope.joinpage = "Come, Work with us";
     });*/

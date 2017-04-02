@@ -10,6 +10,8 @@ $('document'). ready(function(){
 
 
 var myApp = angular.module('myApp',['ngRoute']);
+//var myApp = angular.module('myApp', [require('angular-route')]);
+
 
     myApp.config(function($routeProvider){
         $routeProvider.when('/blog', {

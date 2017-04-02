@@ -14,7 +14,7 @@ html
   max-width:100%;
   min-height:1000px;
   margin-top: 0;
-  background-image: url('/Client/assets/images/c.jpg');
+  background-image: url('/images/c.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -298,28 +298,28 @@ footer
 .fixedBackground1
 {   
     
-    background-image: url(/Client/assets/images/sunset.jpg);
+    background-image: url(images/sunset.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:500px;
 }
 .fixedBackground2
 {
-    background-image: url(/Client/assets/images/sunset2.jpg);
+    background-image: url(images/sunset2.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:500px;
 }
 .fixedBackground3
 {
-    background-image: url(/Client/assets/images/sunset3.jpg);
+    background-image: url(images/sunset3.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:500px;
 }
 .fixedBackground4
 {
-    background-image: url(/Client/assets/images/sunset4.jpg);
+    background-image: url(images/sunset4.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:400px;
@@ -416,7 +416,7 @@ footer
 .contactBackGround{
     height:250px;
    background-size: cover;
-    background-image: url(/Client/assets/images/yellowlight.jpg);
+    background-image: url(/images/yellowlight.jpg);
     background-repeat: no-repeat;
     
 }

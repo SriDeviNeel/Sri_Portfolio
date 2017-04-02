@@ -14,7 +14,7 @@ html
   max-width:100%;
   min-height:1000px;
   margin-top: 0;
-  background-image: url('images/c.jpg');
+  background-image: url(images/c.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

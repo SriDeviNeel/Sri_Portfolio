@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html ng-app='myApp'>
-    <head>
-        <title>sri portfolio</title>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="angular/angular.js"></script>
-        <script src="angular-route/angular-route.js"></script>
-        
-       
+<head>
+    <title>sri portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+</head>
+    
+<body>
+    <header>
+        <nav>
+            <button class="icon"> 
+                <a href="javascript:void(0);">&#9776;</a>
+            </button>
+            <ul class="topnav" id="nav">
+                <li><a href="#!/home">Home</a></li>
+                <li><a href="#!/about">About me</a></li>
+                <li><a href ="#!/blog">Blog</a></li>
+                <li><a href="#!/contact">Contact</a></li>
 
-    </head>
-    <body>
-        <header>
-         
-               <!-- <div id="skipNav">
-                    <ul title="Accessibility options">
-                        <li><a accesskey="S" href="#content">Skip to Content</a></li>
-                        <li><a accesskey="N" href="#nav">Skip to Navigation</a></li>
-                    </ul>
-                </div>  -->
+            </ul>
+        </nav> 
+    </header>
 
-
-            <nav>
-                <button class="icon"> 
-                    <a href="javascript:void(0);">&#9776;</a>
-                </button>
-                <ul class="topnav" id="nav">
-                    <li><a href="#!/home">Home</a></li>
-                    <li><a href="#!/about">About me</a></li>
-                    <li><a href ="#!/blog">Blog</a></li>
-                    <li><a href="#!/contact">Contact</a></li>
-                    
-                </ul>
-            </nav> 
-        </header>
-        
-        
+        <!--partial views-->
+    <div class="partial" ng-view></div>
        
-        <div class="partial" ng-view></div>
-       
-        <div id="quote">
-                <h3>"IF YOU CAN'T EXPLAIN IT TO A SIX YEAR OLD,</h3>
-                <h3>YOU DON'T UNDERSTAND IT YOURSELF."</h3>
-                <p> - Albert Einstein</p>
-            </div>  
+    <div id="quote">
+        <h3>"IF YOU CAN'T EXPLAIN IT TO A SIX YEAR OLD,</h3>
+        <h3>YOU DON'T UNDERSTAND IT YOURSELF."</h3>
+        <p> - Albert Einstein</p>
+    </div>  
             
-        <footer id="footer">
-            <h5>&copy; Sridevi Neeladharan</h5>
-            <div id="botNav">
-          
-            </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
-            <script src="main.js" type="text/javascript"></script>
-    </body>
+    <footer id="footer">
+        <h5>&copy; Sridevi Neeladharan</h5>
+        <div id="botNav">
+        </div>
+    </footer>
+    <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
                                        
 </html>
